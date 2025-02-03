@@ -34,10 +34,10 @@ function sortearAmigo(){
         return;
     }
 
-    // Sortear un amigo
-
     // Generar un número aleatorio entre 0 y la cantidad de amigos en la lista
     let numeroAleatorio = Math.floor(Math.random() * listaDeAmigos.length);
 
-    return listaDeAmigos[numeroAleatorio];
+    // Mostrar el amigo sorteado
+
+    document.getElementById("resultado").innerHTML = "El amigo sorteado es: " + listaDeAmigos[numeroAleatorio];
 }
