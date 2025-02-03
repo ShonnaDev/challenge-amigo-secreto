@@ -4,8 +4,14 @@
 var listaDeAmigos = [];
 
 
-function agregarAmigos(nombre){
+function agregarAmigo(){
+    let nombre = document.getElementById("amigo").value;
+    if (nombre === "") {
+        alert("Debe ingresar un nombre");
+        return false;
+    }
     // Agregar un amigo a la lista
     listaDeAmigos.push(nombre);
+    document.getElementById("amigo").value = "";
     return listaDeAmigos;
 }
